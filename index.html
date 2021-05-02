@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Funções Orgânicas</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="navbar-toggler-icon"></div>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item" >
+                <a class="nav-link disabled" href="#">Link</a>
+              </li>
+              
+              
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+
+      <h1>FUNÇÕES ORGÂNICAS</h1>
+      <label id="explicacao-func">As Funções Orgânicas são determinadas pelas estruturas e agrupam compostos orgânicos com características semelhantes.
+        Esses compostos são formados por átomos de carbono, motivo pelo qual também são chamados de compostos carbônicos.
+        As semelhanças dos compostos orgânicos são resultado de grupos funcionais, que os caracterizam e nomeiam as substâncias de forma específica.</label>
+      <div id="super" class="super">
+
+
+      <!-- CARROSSEL -->
+      <span class="carrossel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active"  data-bs-interval="9600" >
+              <img src="img/Cetona GIF.gif" class="d-block w-100" >
+            </div>
+            <div class="carousel-item" data-bs-interval="9600">
+              <img src="img/ÉTER GIF.gif" class="d-block w-100" >
+            </div>
+            <div class="carousel-item" data-bs-interval="9600">
+              <img src="img/GIF ÁLCOOL.gif" class="d-block w-100" >
+            </div>
+            <div class="carousel-item" data-bs-interval="9600">
+              <img src="img/GIF2 AC.gif" class="d-block w-100" >
+            </div>
+            <div class="carousel-item" data-bs-interval="9600">
+              <img src="img/GIF ALDEÍDOS.gif" class="d-block w-100" >
+            </div>
+            <div class="carousel-item" data-bs-interval="9600">
+              <img src="img/GIF ÉSTER.gif" class="d-block w-100" >
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+    </span>
+    <div class="filtro">
+      <label>Filtros</label>
+      <br>
+      <hr>
+      <label id="menor">Escolha os tipos de funções que você quer</label>
+      <br>
+      <hr>
+      <input type="radio" value="f-ce" onclick="cetona('f-ce')"> <label id="radio">Cetona</label>
+      <input type="radio" value="f-et" onclick="cetona('f-et')"> <label id="radio">Éter</label>
+      <input type="radio" value="f-alc" onclick="cetona('f-alc')"> <label id="radio">Álcool</label>
+      <input type="radio" value="f-ac" onclick="cetona('f-ac')"> <label id="radio">Ácidos Carboxílicos</label>
+      <input type="radio" value="f-ald" onclick="cetona('f-ald')"> <label id="radio">Aldeídos</label>
+      <input type="radio" value="f-ald" onclick="cetona('f-es')"> <label id="radio">Éster</label>
+      
+  </div>
+       <!--INICIO FUNÇÕES-->
+       <div class="container geral">
+           <div class="row justify-content-md-center">
+
+
+      <div id="propanona" class="fun-org col">
+        <div id="propanona" onclick="propanona()">
+            <img src="img/1200px-Aceton.svg.png" >
+            <br>
+            <label id="menor">PROPANONA</label>
+        </div>
+      </div>
+
+      <div id="propanona-2" class="fun-org col " >
+        <div id="propanona-2" onclick="propanona()">
+            <img src="img/2-Pentanone.svg.png" >
+            <br>
+            <label id="menor">2-PROPANONA</label>
+        </div>
+      </div>
+
+      <div id="butanona" class="fun-org col">
+        <div id="butanona">
+            <img id="butanona-img" src="img/butanona 1.png" >
+            <br>
+            <label id="menor">BUTANONA</label>
+        </div>
+      </div>
+
+
+           </div>
+<!--COLUNA 2-->
+           <div class="row justify-content-md-center">
+
+
+            <div id="Benzoquin" class="fun-org col ">
+              <div id="Benzoquin-1-2-ona">
+                  <img src="img/800px-Orthobenzoquinone.svg.png" >
+                  <br>
+                  <label id="menor">BENZOQUIN-1, 2-ONA</label>
+              </div>
+            </div>
+      
+            <div id="metoxietano" class="fun-org col">
+              <div id="metoxietano">
+                  <img src="img/Metoxietano.jpg" >
+                  <br>
+                  <label id="menor">METOXIETANO</label>
+              </div>
+            </div>
+      
+            <div id="dipropilico" class="fun-org col" >
+              <div id="eter-dipropilico">
+                  <img  id="butanona-img" src="img/teste.png" >
+                  <br>
+                  <label id="menor">ÉTER DIPROPÍLICO</label>
+              </div>
+            </div>
+      
+      
+                 </div>
+
+                 <!--COLUNA 3-->
+                 <div class="row justify-content-md-center">
+
+
+                  <div id="Metoxi-propano" class="fun-org col">
+                    <div id="Metoxi-propano" >
+                        <img src="img/metoxi-propano.jpg" >
+                        <br>
+                        <label id="menor">METOXI-PROPANO</label>
+                    </div>
+                   </div>
+            
+                   <div id="Etil-propil-éter" class="fun-org col fun-org2">
+                    <div id="Etil-propil-éter">
+                        <img src="img/etil-propil-éter.jpg" >
+                        <br>
+                        <label id="menor">ETIL-PROPIL-ÉTER</label>
+                    </div>
+                  </div>
+            
+                  <div id="Etil-isopropil-éter" class="fun-org col" >
+                    <div id="Etil-isopropil-éter">
+                        <img src="img/etil-isopropil-eter.jpg" >
+                        <br>
+                        <label id="menor">ETIL-ISOPROPIL-ÉTER</label>
+                    </div>
+                  </div>
+            
+            
+                       </div>
+
+
+                       <!--COLUNA 4-->
+                 <div class="row justify-content-md-center">
+
+
+                  <div id="éter-dietílico" class="fun-org col" >
+                    <div id="éter-dietílico">
+                        <img src="img/eter-etil-etilico.jpg" >
+                        <br>
+                        <label id="menor">ÉTER DIETÍLICO</label>
+                    </div>
+                  </div>
+            
+                  <div id="pentanona-2" class="fun-org col">
+                    <div id="pentanona-2">
+                        <img src="img/2-Pentanone.svg.png" >
+                        <br>
+                        <label id="menor">2-PENTANONA</label>
+                    </div>
+                  </div>
+            
+                  <div id="hexandiona" class="fun-org col" >
+                    <div id="hexandiona">
+                        <img src="img/hexan-24-diona.jpg" >
+                        <br>
+                        <label id="menor">HEXAN-2,4-DIONA</label>
+                    </div>
+                  </div>
+            
+            
+                       </div>
+
+                  <!--COLUNA 5-->
+                  <div class="row justify-content-md-center">
+
+
+                    <div id="etanol" class="fun-org col">
+                      <div id="etanol" >
+                          <img src="img/etanol 2.jpg" >
+                          <br>
+                          <label id="menor">ETANOL</label>
+                      </div>
+                     </div>
+              
+                    <div id="Hexan-14-diol" class="fun-org col">
+                      <div id="Hexan-14-diol">
+                          <img src="img/hexan-14-diol.jpg" >
+                          <br>
+                          <label id="menor">HEXAN-1,4-DIOL</label>
+                      </div>
+                    </div>
+              
+                    <div id="metil-hexan-2-ol" class="fun-org col">
+                      <div id="metil-hexan-2-ol">
+                          <img src="img/4-metil-hexan-2-ol.jpg" >
+                          <br>
+                          <label id="menor">4-METIL-HEXAN-2-OL</label>
+                      </div>
+                    </div>
+              
+              
+                         </div>
+                  <!--COLUNA 6-->
+                  <div class="row justify-content-md-center">
+
+
+                    <div id="metil-pent-3-enol" class="fun-org col fun-org2">
+                      <div id="metil-pent-3-enol">
+                          <img src="img/2-metil-pent-3-enol.jpg" >
+                          <br>
+                          <label id="menor">2-METIL-PENT-3-ENOL</label>
+                      </div>
+                    </div>
+              
+                    <div id="Álcoolbutílico" class="fun-org col">
+                      <div id="Álcoolbutílico">
+                          <img src="img/alcool-butilico.jpg" >
+                          <br>
+                          <label id="menor">ÁLCOOL BUTÍLICO</label>
+                      </div>
+                    </div>
+              
+                    <div id="AlcoolIsopropílico" class="fun-org col" >
+                      <div id="AlcoolIsopropílico">
+                          <img src="img/alcool-isopropilico.jpg" >
+                          <br>
+                          <label id="menor">ÁLCOOL ISOPROPÍLICO</label>
+                      </div>
+                    </div>
+              
+              
+                         </div>
+                  <!--COLUNA 7-->
+
+                  <div class="row justify-content-md-center">
+
+
+                    <div id="Ácido-metil-butanoico" class="fun-org col fun-org2">
+                      <div id="Ácido-metil-butanoico">
+                          <img src="img/acido-2-metil-butanóico.jpg" >
+                          <br>
+                          <label id="menor">ÁCIDO 2-METIL-BUTANOICO</label>
+                      </div>
+                    </div>
+              
+                    <div id="acidoPropanoico" class="fun-org col">
+                      <div id="acidoPropanoico">
+                          <img src="img/AcidoPropanoico.jpg" >
+                          <br>
+                          <label id="menor">ÁCIDO PROPANOICO</label>
+                      </div>
+                    </div>
+              
+                    <div id="acidoMetanoico" class="fun-org col">
+                      <div id="acidoMetanoico">
+                          <img src="img/Formic_acid.svg.png" >
+                          <br>
+                          <label id="menor">ÁCIDO METANOICO</label>
+                      </div>
+                    </div>
+              
+              
+                         </div>
+
+                    <!-- COLUNA 8-->
+                    <div class="row justify-content-md-center">
+
+
+                      <div id="butanal" class="fun-org col fun-org2">
+                        <div id="butanal">
+                            <img src="img/butanal.jpg" >
+                            <br>
+                            <label id="menor">BUTANAL</label>
+                        </div>
+                      </div>
+                
+                      <div id="etil-hexanal" class="fun-org col">
+                        <div id="etil-hexanal">
+                            <img src="img/etil-hexanal.jpg" >
+                            <br>
+                            <label id="menor">4-ETIL-HEXANAL</label>
+                        </div>
+                      </div>
+                
+                      <div id="Etanal" class="fun-org col">
+                        <div id="Etanal">
+                            <img src="img/etanal2.jpg" >
+                            <br>
+                            <label id="menor">Etanal</label>
+                        </div>
+                      </div>
+                
+                
+                           </div>
+                      <!--COLUNA 9-->
+                      <div class="row justify-content-md-center">
+
+
+                        <div id="propanoatoDeMetila" class="fun-org col fun-org2">
+                          <div id="propanoatoDeMetila">
+                              <img src="img/propanoato de metila.jpg" >
+                              <br>
+                              <label id="menor">PROPANOATO DE METILA</label>
+                          </div>
+                        </div>
+                  
+                        <div id="Propanoato-de-propila" class="fun-org col">
+                          <div id="Propanoato-de-propila">
+                              <img src="img/propanoato de propila.jpg">
+                              <br>
+                              <label id="menor">PROPANOATO DE PROPILA</label>
+                          </div>
+                        </div>
+                  
+                        <div id="Butanoato-de-etila" class="fun-org col">
+                          <div id="Butanoato-de-etila">
+                              <img src="img/Ethyl_butyrate.png" >
+                              <br>
+                              <label id="menor">BUTANOATO DE ETILA</label>
+                          </div>
+                        </div>
+                  
+                  
+                             </div>
+                             <!--COLUNA 10-->
+</div>
+
+
+
+</div>
+
+<!--SUB-PAGINAS-->
+    <div class="container">
+
+        <div class="row justify-content-md-center">
+    <div id="sub-propanona" class="some">
+      <h1>PROPANONA</h1>
+        <div class="fun-org col-auto">
+            <div id="propanona" >
+                <img class=" justify-content-center"src="img/1200px-Aceton.svg.png" >
+                <br>
+                <label id="menor">PROPANONA</label>
+            </div>
+          </div>
+          <ul>
+              <li id="formula">Fórmula Empírica: <label>C3H6O</label></li>
+              <li id="nomes">Outros nomes: <label >Dimetilcetona; Propanona; Acetona.</label></li>
+              <li id="aplicação-g"><label >Aplicações:</label>
+                A Acetona (Propanona) é um solvente para diversas aplicações, da família das Cetonas. É um líquido incolor, de odor pungente. A Acetona (Propanona) possui Ponto de Ebulição 56,2 ºC, Ponto de Fulgor -18 ºC, Ponto de Fusão -94,7ºC.
+                
+                A Acetona é utilizada para a limpeza de equipamentos preciosos; é solvente de Iodeto e Permanganato de potássio; utilizado para vulcanização de borracha. Utilizada como solvente em esmaltes, tintas e vernizes, na extração de óleos, na fabricação de fármacos, na indústria de explosivos como gelatinizante da pólvora sem fumaça (nitrocelulose) e como produto inicial de sínteses químicas, entre outros.
+                
+                É amplamente utilizado nas seguintes aplicações: tintas de impressão; adesivos; thinners e removedores; extração; precipitação e cristalização de vitaminas, antibióticos e outros produtos, desengraxe e limpeza de cinescópios e componentes eletrônicos; adsorvente para acetileno, etc.
+                
+                Como intermediário químico é muito utilizado na produção de Bisfenol A, Diacetona álcool, Metilisobutilcetona, etc.</li>
+          </ul>
+          
+
+    </div>
+        </div>
+</div>
+
+<!-- PAGINAS DO FILTRO -->
+
+<!--CETONA-->
+<div id="filtro_cetona" class="container some">
+<span class="carrossel">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" >
+        <img src="img/Cetona GIF.gif" class="d-block w-100" >
+      </div>
+    </div>
+    
+  </div>
+</span>
+
+  
+    <div class="row justify-content-md-center">
+
+
+<div id="propanona" class="fun-org col">
+ <div id="propanona" onclick="propanona()">
+     <img src="img/1200px-Aceton.svg.png" >
+     <br>
+     <label id="menor">PROPANONA</label>
+ </div>
+</div>
+
+<div id="propanona-2" class="fun-org col " >
+ <div id="propanona-2" onclick="propanona()">
+     <img src="img/2-Pentanone.svg.png" >
+     <br>
+     <label id="menor">2-PROPANONA</label>
+ </div>
+</div>
+
+<div id="butanona" class="fun-org col">
+ <div id="butanona">
+     <img id="butanona-img" src="img/butanona 1.png" >
+     <br>
+     <label id="menor">BUTANONA</label>
+ </div>
+</div>
+
+
+    </div>
+
+    <div class="row justify-content-md-center">
+
+
+     <div id="Benzoquin" class="fun-org col fun-org2">
+       <div id="Benzoquin-1-2-ona">
+           <img src="img/800px-Orthobenzoquinone.svg.png" >
+           <br>
+           <label id="menor">BENZOQUIN-1, 2-ONA</label>
+       </div>
+     </div>
+
+     <div id="pentanona-2" class="fun-org col">
+       <div id="pentanona-2">
+           <img src="img/2-Pentanone.svg.png" >
+           <br>
+           <label id="menor">2-PENTANONA</label>
+       </div>
+     </div>
+
+     <div id="hexandiona" class="fun-org col" >
+       <div id="hexandiona">
+           <img src="img/hexan-24-diona.jpg" >
+           <br>
+           <label id="menor">HEXAN-2,4-DIONA</label>
+       </div>
+     </div>
+
+
+          </div>
+</div>
+
+<!--ETER-->
+<div id="filtro_eter" class="container some">
+  <span class="carrossel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active"  >
+          <img src="img/ÉTER GIF.gif" class="d-block w-100" >
+        </div>
+      </div>
+      
+    </div>
+  </span>
+  
+    
+      <div class="row justify-content-md-center">
+  
+  
+  <div id="Metoxi-propano" class="fun-org col">
+   <div id="Metoxi-propano" onclick="propanona()">
+       <img src="img/metoxi-propano.jpg" >
+       <br>
+       <label id="menor">METOXI-PROPANO</label>
+   </div>
+  </div>
+  
+  <div id="propoxi-propano" class="fun-org col " >
+   <div id="propoxi-propano" onclick="propanona()">
+       <img src="img/propoxi-propano.jpg" >
+       <br>
+       <label id="menor">PROPOXI-PROPANO</label>
+   </div>
+  </div>
+  
+  <div id="metoxietano" class="fun-org col">
+    <div id="metoxietano">
+        <img src="img/Metoxietano.jpg" >
+        <br>
+        <label id="menor">METOXIETANO</label>
+    </div>
+  </div>
+  
+  
+      </div>
+  
+      <div class="row justify-content-md-center">
+  
+  
+       <div id="Etil-propil-éter" class="fun-org col fun-org2">
+         <div id="Etil-propil-éter">
+             <img src="img/etil-propil-éter.jpg" >
+             <br>
+             <label id="menor">ETIL-PROPIL-ÉTER</label>
+         </div>
+       </div>
+  
+       <div id="Etil-isopropil-éter" class="fun-org col" >
+        <div id="Etil-isopropil-éter">
+            <img src="img/etil-isopropil-eter.jpg" >
+            <br>
+            <label id="menor">ETIL-ISOPROPIL-ÉTER</label>
+        </div>
+      </div>
+  
+       <div id="éter-dietílico" class="fun-org col" >
+         <div id="éter-dietílico">
+             <img src="img/eter-etil-etilico.jpg" >
+             <br>
+             <label id="menor">ÉTER DIETÍLICO</label>
+         </div>
+       </div>
+  
+  
+            </div>
+  </div>
+  
+
+
+<!--ALCOOL-->
+<div id="filtro_alcool" class="container some">
+  <span class="carrossel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active"  >
+          <img src="img/GIF ÁLCOOL.gif" class="d-block w-100" >
+        </div>
+      </div>
+      
+    </div>
+  </span>
+  
+    
+      <div class="row justify-content-md-center">
+  
+  
+  <div id="etanol" class="fun-org col">
+   <div id="etanol" onclick="propanona()">
+       <img src="img/etanol 2.jpg" >
+       <br>
+       <label id="menor">ETANOL</label>
+   </div>
+  </div>
+  
+  <div id="Hexan-14-diol" class="fun-org col">
+    <div id="Hexan-14-diol">
+        <img src="img/hexan-14-diol.jpg" >
+        <br>
+        <label id="menor">HEXAN-1,4-DIOL</label>
+    </div>
+  </div>
+  
+  <div id="metil-hexan-2-ol" class="fun-org col">
+    <div id="metil-hexan-2-ol">
+        <img src="img/4-metil-hexan-2-ol.jpg" >
+        <br>
+        <label id="menor">4-METIL-HEXAN-2-OL</label>
+    </div>
+  </div>
+  
+  
+      </div>
+  
+      <div class="row justify-content-md-center">
+  
+  
+       <div id="metil-pent-3-enol" class="fun-org col fun-org2">
+         <div id="metil-pent-3-enol">
+             <img src="img/2-metil-pent-3-enol.jpg" >
+             <br>
+             <label id="menor">2-METIL-PENT-3-ENOL</label>
+         </div>
+       </div>
+  
+       <div id="Álcoolbutílico" class="fun-org col">
+        <div id="Álcoolbutílico">
+            <img src="img/alcool-butilico.jpg" >
+            <br>
+            <label id="menor">ÁLCOOL BUTÍLICO</label>
+        </div>
+      </div>
+  
+       <div id="AlcoolIsopropílico" class="fun-org col" >
+         <div id="AlcoolIsopropílico">
+             <img src="img/alcool-isopropilico.jpg" >
+             <br>
+             <label id="menor">ÁLCOOL ISOPROPÍLICO</label>
+         </div>
+       </div>
+  
+  
+            </div>
+  </div>
+  
+
+<!--ACIDOS CARBOXÍLICOS-->
+<div id="filtro_acidos" class="container some">
+  <span class="carrossel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active"  >
+          <img src="img/GIF ÁCIDOS CARBOXÍLICOS.gif" class="d-block w-100" >
+        </div>
+      </div>
+      
+    </div>
+  </span>
+  
+    
+      <div class="row justify-content-md-center">
+  
+  
+        <div id="Ácido-metil-butanoico" class="fun-org col fun-org2">
+          <div id="Ácido-metil-butanoico">
+              <img src="img/acido-2-metil-butanóico.jpg" >
+              <br>
+              <label id="menor">ÁCIDO 2-METIL-BUTANOICO</label>
+          </div>
+        </div>
+  
+        <div id="acidoPropanoico" class="fun-org col">
+          <div id="acidoPropanoico">
+              <img src="img/AcidoPropanoico.jpg" >
+              <br>
+              <label id="menor">ÁCIDO PROPANOICO</label>
+          </div>
+        </div>
+  
+  <div id="acidoMetanoico" class="fun-org col">
+    <div id="acidoMetanoico">
+        <img src="img/Formic_acid.svg.png" >
+        <br>
+        <label id="menor">ÁCIDO METANOICO</label>
+    </div>
+  </div>
+  
+  
+      </div>
+  
+  
+            
+  </div>
+
+  
+<!--ALDEÍDOS-->
+<div id="filtro_aldeidos" class="container some">
+  <span class="carrossel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active"  >
+          <img src="img/GIF ALDEÍDOS.gif" class="d-block w-100" >
+        </div>
+      </div>
+      
+    </div>
+  </span>
+  
+    
+      <div class="row justify-content-md-center">
+  
+  
+        <div id="butanal" class="fun-org col fun-org2">
+          <div id="butanal">
+              <img src="img/butanal.jpg" >
+              <br>
+              <label id="menor">BUTANAL</label>
+          </div>
+        </div>
+  
+        <div id="etil-hexanal" class="fun-org col">
+          <div id="etil-hexanal">
+              <img src="img/etil-hexanal.jpg" >
+              <br>
+              <label id="menor">4-ETIL-HEXANAL</label>
+          </div>
+        </div>
+  
+  <div id="Etanal" class="fun-org col">
+    <div id="Etanal">
+        <img src="img/etanal2.jpg" >
+        <br>
+        <label id="menor">Etanal</label>
+    </div>
+  </div>
+  
+  
+      </div>
+  
+  
+            
+  </div>
+  
+<!--ÉSTER-->
+<div id="filtro_ester" class="container some">
+  <span class="carrossel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active"  >
+          <img src="img/GIF ÉSTER.gif" class="d-block w-100" >
+        </div>
+      </div>
+      
+    </div>
+  </span>
+  
+    
+      <div class="row justify-content-md-center">
+  
+  
+        <div id="propanoatoDeMetila" class="fun-org col fun-org2">
+          <div id="propanoatoDeMetila">
+              <img src="img/propanoato de metila.jpg" >
+              <br>
+              <label id="menor">PROPANOATO DE METILA</label>
+          </div>
+        </div>
+  
+        <div id="Propanoato-de-propila" class="fun-org col">
+          <div id="Propanoato-de-propila">
+              <img src="img/propanoato de propila.jpg">
+              <br>
+              <label id="menor">PROPANOATO DE PROPILA</label>
+          </div>
+        </div>
+  
+        <div id="Butanoato-de-etila" class="fun-org col">
+          <div id="Butanoato-de-etila">
+              <img src="img/Ethyl_butyrate.png" >
+              <br>
+              <label id="menor">BUTANOATO DE ETILA</label>
+          </div>
+        </div>
+  
+  
+      </div>
+  
+  
+            
+  </div>
+  
+
+      <script src="bootstrap-5.0.0/js/bootstrap.min.js"></script>
+      <script src="js/script.js"></script>
+</body>
+</html>
